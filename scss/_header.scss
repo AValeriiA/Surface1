@@ -1,0 +1,366 @@
+@font-face {
+  font-family: ProximaNovaLight;
+  src: url(../fonts/ProximaNova/ProximaNova-Light.otf);
+  src: url(../fonts/ProximaNova/ProximaNova-Light.eot);
+  src: url(../fonts/ProximaNova/ProximaNova-Light.woff);
+}
+@font-face {
+  font-family: ProximaNovaReg;
+  src: url(../fonts/ProximaNova/ProximaNova-Reg.otf);
+  src: url(../fonts/ProximaNova/ProximaNova-Reg.eot);
+  src: url(../fonts/ProximaNova/ProximaNova-Reg.woff);
+}
+@font-face {
+  font-family: ProximaNovaBold;
+  src: url(../fonts/ProximaNova/ProximaNova-Bold.otf);
+  src: url(../fonts/ProximaNova/ProximaNova-Bold.eot);
+  src: url(../fonts/ProximaNova/ProximaNova-Bold.woff);
+}
+@font-face {
+  font-family: ProximaNovaBoldIt;
+  src: url(../fonts/ProximaNova/ProximaNova-BoldIt.otf);
+  src: url(../fonts/ProximaNova/ProximaNova-BoldIt.eot);
+  src: url(../fonts/ProximaNova/ProximaNova-BoldIt.woff);
+}
+$PN_L: ProximaNovaLight;
+$PN_R: ProximaNovaReg;
+$PN_B: ProximaNovaBold;
+
+body, footer, header{
+  overflow-x: hidden;
+}
+header{
+  position: relative;
+	-webkit-background-size: cover;
+	-o-background-size: cover;	
+	background-size: cover;
+  min-height: 960px;
+  background: -webkit-linear-gradient(rgba(10, 14, 52, 0.9), rgba(10, 14, 52, 0.9)), url(../images/header_bg.jpg) center 37% no-repeat;
+  background: -moz-linear-gradient(rgba(10, 14, 52, 0.9), rgba(10, 14, 52, 0.9)), url(../images/header_bg.jpg) center 37% no-repeat;
+  background: -o-linear-gradient(rgba(10, 14, 52, 0.9), rgba(10, 14, 52, 0.9)), url(../images/header_bg.jpg) center 37% no-repeat;
+  background: linear-gradient(rgba(10, 14, 52, 0.9), rgba(10, 14, 52, 0.9)), url(../images/header_bg.jpg) center 37% no-repeat;
+  @media screen and (max-width: 767px){
+    min-height: 568px;
+    background-position: 43% 6%;
+  }
+  .header_content{
+  	max-width: 1594px;
+  	margin: 0 auto;
+  	float: none;
+  	padding: 54px 25px 0;
+    @media screen and (max-width: 1610px){
+      padding: 54px 15px 0;
+    }
+    @media screen and (max-width: 767px){
+      position: static;
+      padding: 39px 0px 0;
+    }
+  	.hc_top, .f_bottom{
+  		padding: 0px 6px 0;
+      @media screen and (max-width: 767px){
+        text-align: center;
+      }
+  		.logo{
+  			float: left;
+        @media screen and (max-width: 767px){
+          display: inline-block;
+          float: none;          
+        }
+        img{
+          @media screen and (max-width: 400px){
+            -webkit-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            width: 100%;        
+          }          
+        }
+  		}
+  		.hc_top_text{
+  			float: right;
+  			text-transform: uppercase;
+  			font-size: 14px;
+  			color: #FFF;
+  			font-family: ProximaNovaLight;
+  			letter-spacing: 0.6px;
+  			padding: 7px 0 0 0;
+  		}
+  	}
+  	.hc_center{
+  		margin: 292px 0 0 0;
+  		position: relative;
+      @media screen and (max-width: 1610px){
+        margin: 171px auto 0;
+        width: 668px;        
+      }
+      @media screen and (max-width: 1024px){       
+        width: 629px;        
+      }
+      @media screen and (max-width:768px){       
+        width: 668px;        
+      }
+      @media screen and (max-width: 767px){ 
+        margin: 123px auto 0; 
+        padding: 0 27%;      
+        width: 100%; 
+        position: static;       
+      }
+      @media screen and (max-width: 678px){ 
+        padding: 0 23%;      
+      }
+      @media screen and (max-width: 578px){ 
+        padding: 0 20%;      
+      }
+      @media screen and (max-width: 480px){ 
+        padding: 0 17%;      
+      }
+      @media screen and (max-width: 479px){ 
+        padding: 0; 
+        width: 80%;     
+      }
+      @media screen and (max-width: 400px){  
+        width: 90%;     
+      }
+      @media screen and (max-width: 320px){  
+        width: 100%;     
+      }
+  		p{
+  			text-transform: uppercase;
+  			font-family: $PN_B,sans-serif;
+  			font-size: 90px;
+  			color: #FFF;
+  			padding: 0;
+  			line-height: 90px;
+  			position: relative;
+        @media screen and (max-width: 1610px){
+          font-size: 70px;        
+        }
+        @media screen and (max-width: 768px){
+          font-size: 67px; 
+          line-height: 78px;       
+        }
+        @media screen and (max-width: 767px){
+          font-size: 33px; 
+          line-height: 46px;     
+        }
+  			&:nth-child(1){
+  				letter-spacing: 4.5px;
+  				z-index: 3;
+          @media screen and (max-width: 768px){
+            padding: 0 0 0 35px;
+            letter-spacing: 1.4px;    
+          }
+          @media screen and (max-width: 767px){
+            padding: 0 0 0 9px;
+          }
+  			}  			
+  			&:nth-child(2){
+  				padding: 0px 0 0 459px;
+  				letter-spacing: 4px;
+          @media screen and (max-width: 1610px){
+            padding: 0px 0 0 120px; 
+            z-index: 3;
+            letter-spacing: 0.9px;                   
+          }
+          @media screen and (max-width: 768px){
+            padding: 0px 0 0 146px; 
+            z-index: 3;
+            letter-spacing: 0.9px;                   
+          }
+          @media screen and (max-width: 767px){
+            padding: 0px 0 0 64px; 
+            z-index: 3;
+            letter-spacing: 0.3px;                   
+          }
+  			}
+  		}
+  		span{
+  			display: block;
+  			position: absolute;
+  			width: 6px;
+  			height: 400px;
+  			background: #5e42b0;
+  			-webkit-transform: rotate(38.5deg) !important;
+  			-moz-transform: rotate(38.5deg) !important;
+  			-ms-transform: rotate(38.5deg) !important;
+  			-o-transform: rotate(38.5deg) !important;
+  			transform: rotate(38.5deg) !important;
+  			top: -124px;
+  			left: 521px; 
+  			z-index: 2;
+        @media screen and (max-width: 1610px){
+          top: -64px;
+          left: 50%;             
+        } 
+        @media screen and (max-width: 768px){
+          top: -80px;
+          left: 50%;            
+        }	
+        @media screen and (max-width: 767px){
+          top: 28%;
+          left: 50%;
+          width: 4px;
+          height: 221px;        
+        }   
+        @media screen and (max-width: 320px){
+          top: 26%;
+        } 		
+  		}
+  		.h_nav{
+  			float: right;
+  			margin: 10px 0 0 0;
+  			padding-right: 10px;
+        @media screen and (max-width: 1610px){
+          margin: 160px auto 0;          
+          float: none;
+          padding: 0;
+          ul{
+            text-align: center;
+            li:first-child{
+              margin: 0;
+            }
+          }
+        }
+        @media screen and (max-width: 767px){
+          margin: 0;       
+          position: absolute;
+          bottom: 2%;
+          left: 0;
+          width: 100%;
+        }
+  			ul{
+  				li{
+  					display: inline-block;
+  					margin-left: 44px;
+  					letter-spacing: 0.6px;
+            @media screen and (max-width: 768px){
+              margin-left: 51px;
+              letter-spacing: 2px;           
+            }
+            @media screen and (max-width: 767px){
+              width: 29%;
+              margin: 0;
+              letter-spacing: 2px;           
+            }
+            a{
+              text-transform: uppercase;
+              font-size: 14px;
+              color: #9071EA;
+              font-family: ProximaNovaLight;
+              @media screen and (max-width: 767px){
+               font-size: 11px;
+               letter-spacing: 0px;           
+              }
+            }
+  				}
+  			}
+  		}
+  	}  	
+  }
+}
+.hc_bottom{
+  margin: 176px 0 0;
+  @media screen and (max-width: 1610px){
+    margin: 112px 0 0;                   
+  }
+  @media screen and (max-width: 767px){
+    margin: 102px 0 0;                   
+  }
+  .hcb_wrap{
+    width: 676px;
+    margin: 0 auto;
+    float: none;
+    @media screen and (max-width: 1610px){
+      width: 657px;                  
+    }
+    @media screen and (max-width: 1024px){
+      width: 100%;
+      text-align: center;           
+    }
+    .hcb_block{
+      width: 310px;
+      height: 76px;        
+      float: left;
+      -webkit-border-radius: 40px;
+      border-radius: 40px;
+      margin-left: 51px;          
+      line-height: 15px;
+      letter-spacing: 0.6px;
+      -webkit-box-shadow: 0px 18px 24px 0px rgba(10,14,52,1);
+      -moz-box-shadow: 0px 18px 24px 0px rgba(10,14,52,1);
+      box-shadow: 0px 18px 24px 0px rgba(10,14,52,1);
+      background: #5E42B0 url(../images/icons_set.png) 0 0 no-repeat;      
+      &:hover{
+        p{
+          font-size: 16px;
+          @media screen and (max-width: 767px){
+            font-size: 8px;             
+          }
+        }
+      }
+      @media screen and (max-width: 1610px){
+        margin-left: 33px;                 
+      }
+      @media screen and (max-width: 1024px){
+        display: inline-block;
+        text-align: left; 
+        float: none;                 
+      }
+      @media screen and (max-width: 767px){
+        width: 142px;        
+        margin-left: 4px;
+        height: 39px;             
+      }
+      &:first-child{
+        margin-left: 0;
+        background-position: 42px -62px; 
+        @media screen and (max-width: 767px){
+          background-position: 18px -30px;
+          background-size: 13%;           
+        }       
+      }
+      &:nth-child(2){
+        background-position: 64px 19px;
+        @media screen and (max-width: 767px){
+          background-position: 30px 10px;
+          background-size: 13%;           
+        } 
+        a{
+          padding: 24px 0px 0 126px;
+          @media screen and (max-width: 767px){
+            padding: 7px 0px 0 53px; 
+            line-height: 13px;         
+          } 
+        }
+      }
+      a{
+        width: 100%;
+        height: 100%;
+        display: block;
+        padding: 24px 0px 0 104px;
+        @media screen and (max-width: 767px){
+          padding: 7px 0px 0 44px;
+          line-height: 13px;      
+        } 
+        p{
+          color: #fff;
+          text-transform: uppercase;
+          font-size: 14px;
+          -webkit-transition: 0.6s;
+          -moz-transition: 0.6s;
+          -ms-transition: 0.6s;
+          -o-transition: 0.6s;
+          transition: 0.6s;
+          @media screen and (max-width: 767px){
+            font-size: 8px;
+          } 
+          &:first-child{
+            font-family: $PN_L;
+          }
+          &:nth-child(2){
+            font-family: $PN_B;
+          }
+        }
+      }
+    }
+  }
+}

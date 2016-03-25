@@ -1,0 +1,346 @@
+$light_purple: #f6f4fa;
+$purple: #5e42b0;
+$gray: #f5f6f7;
+$dark_blue: #0a0e34;
+.light_purple{
+	background: $light_purple;
+}
+.gray{
+	background: $gray;
+	.awb{
+		p{
+			padding: 25px 0 0 0 !important;
+		}
+	}
+}
+.purple{
+	background: $purple;
+	padding: 86px 0 99px !important;
+	@media screen and (max-width: 768px){
+		padding: 34px 0 32px !important;
+	}
+	.a_wrap_block .awb p{
+		color: #FFF !important;
+	}
+	.awb_number{		
+		span{			
+			&:last-child{
+				display: block;
+				width: 100%;
+				height: 5px;
+				background: #fff !important;
+				-webkit-border-radius: 10px;
+				border-radius: 10px;
+			}
+		}
+	}
+}
+.dark_blue{
+	background: $dark_blue;
+	padding: 93px 0 91px !important;
+	@media screen and (max-width: 768px){
+		padding: 71px 0 73px !important;
+	}
+	.a_wrap_block .awb p{
+		color: #FFF !important;
+	}
+	.awb_number{		
+		span{	
+			&:first-child{
+				color: $purple !important;
+			}		
+			&:last-child{
+				display: block;
+				width: 100%;
+				height: 5px;
+				background: #fff !important;
+				-webkit-border-radius: 10px;
+				border-radius: 10px;
+			}
+		}
+	}	
+}
+h2{
+	font-family: $PN_B;
+	font-size: 90px;
+	color: #E7E7E7;
+	text-transform: uppercase;
+	padding: 0;
+	letter-spacing: -0.8px;
+	@media (max-width: 1400px){
+		font-size: 70px;
+	}
+	@media (max-width: 1200px){
+		font-size: 60px;
+	}
+	@media (max-width: 991px){
+		font-size: 50px;
+	}	
+	@media (max-width: 767px){
+		font-size: 36px;
+	}	
+}
+h3{
+	font-family: $PN_B;
+	font-size: 36px;
+	color: #C1C1C1;
+	text-transform: uppercase;
+	padding: 0;
+	letter-spacing: 1.8px; 		
+}
+#athlets{
+	padding: 0px 0 0 0;
+	position: relative;
+	@media screen and (max-width: 767px){
+		min-height: 240px;
+	}
+	.player_wrap{
+		width: 678px;
+		height: 950px;
+		position: absolute;
+		background: url(../images/footballer.png) 0 0 no-repeat;
+		-webkit-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		left: 313px;
+		top: 41px;
+		z-index: 2;
+		@media screen and (max-width: 1610px){
+			left: 10%;
+		}	
+		@media screen and (max-width: 1400px){
+			left: 0%;
+		}	
+		@media screen and (max-width: 1100px){
+			left: -15%;
+		}	
+		@media screen and (max-width: 920px){
+			left: -28%;
+		}
+		@media screen and (max-width: 768px){
+			left: -22%;
+			top: 88px;
+			width: 504px;
+			height: 630px;
+		}
+		@media screen and (max-width: 767px){
+			left: calc(50% - 174px/2);
+			top: 81px;
+			width: 174px;
+			height: 278px;
+		}
+		.plus1{
+			position: absolute;
+			top: 115px;
+			left: 71px;
+			@media screen and (max-width: 768px){
+				top: -7px;
+				left: 196px;
+			}	
+			@media screen and (max-width: 767px){				
+				left: -13%;
+				top: 16px;
+			}				
+			span{
+				display: block;
+				width: 16px;
+				height: 3px;
+				background: #cec6e7;
+				-webkit-border-radius: 40px;
+				border-radius: 40px;				
+				&:first-child{
+					position: absolute;
+					-webkit-transform: rotate(90deg);
+					-moz-transform: rotate(90deg);
+					-ms-transform: rotate(90deg);
+					-o-transform: rotate(90deg);
+					transform: rotate(90deg);
+				}
+			}
+		}
+		.plus2{
+			position: absolute;
+			top: 124px;
+			left: 94px;
+			@media screen and (max-width: 768px){
+				top: 3px;
+				left: 220px;
+			}
+			@media screen and (max-width: 767px){
+				top: 25px;
+				left: 0;
+			}					
+			span{
+				display: block;
+				width: 16px;
+				height: 3px;
+				background: $purple;
+				-webkit-border-radius: 40px;
+				border-radius: 40px;				
+				&:first-child{
+					position: absolute;
+					-webkit-transform: rotate(90deg);
+					-moz-transform: rotate(90deg);
+					-ms-transform: rotate(90deg);
+					-o-transform: rotate(90deg);
+					transform: rotate(90deg);
+				}
+			}
+		}
+	}
+	.line{
+		display: block;
+		position: absolute;
+		width: 6px;
+		height: 879px;
+		background: #9172e6;
+		-webkit-transform: rotate(41deg);
+		-moz-transform: rotate(41deg);
+		-ms-transform: rotate(41deg);
+		-o-transform: rotate(41deg);
+		transform: rotate(41deg);
+		top: -39px;
+		left: 582px; 
+		z-index: 1;
+		@media screen and (max-width: 1610px){
+			left: 30%;
+		}	
+		@media screen and (max-width: 1400px){
+			left: 20%;			    
+		} 
+		@media screen and (max-width: 920px){
+			left: 0%;
+		}
+		@media screen and (max-width: 768px){
+			left: -7%;
+			top: 7px;
+		}
+		@media screen and (max-width: 767px){
+			width: 3px;
+			height: 300px;
+			left: 50%;
+			top: 65px;
+		}			
+	}
+}
+.a_wrap{
+	padding: 58px 0 58px;
+	@media screen and (max-width: 768px){
+		padding: 25px 0 41px;
+	}	
+	@media screen and (max-width: 767px){
+		padding: 62px 0 41px;
+	}	
+	&:first-child{
+		padding: 97px 0 10px 0;
+		@media screen and (max-width: 768px){
+			padding: 66px 0 10px 0;
+		}
+		@media screen and (max-width: 767px){
+			padding: 17px 0 41px;
+			margin-bottom: 60%;
+		}
+	}
+	.a_wrap_block{
+		margin: 0 auto;
+		float: none;
+		@media screen and (max-width: 1610px){
+			padding: 0 !important;
+		}
+		&:first-child{
+			.awb{
+				@media screen and (max-width: 767px){
+					margin-left: 0;	
+					text-align: center;				
+				}
+			}
+		}
+		.awb{			
+			@media screen and (max-width: 920px){
+				padding: 0 15px;
+			}
+			@media screen and (max-width: 768px){
+				margin-left: 38%;
+				width: 460px;
+			}
+			@media screen and (max-width: 767px){
+				margin-left: 6%;
+				width: 100%;
+			}
+			p{
+				font-family: $PN_R;
+				font-size: 20px;
+				color: #000;
+				letter-spacing: 0.96px;
+				padding: 17px 0 0 0;	
+				@media screen and (max-width: 768px){
+					letter-spacing: 0px;
+				}			
+			}
+			.awb_number{
+				float: left;
+				margin-right: 10px;
+				span{
+					font-family: $PN_B;
+					font-size: 18px;
+					color: #000;
+					&:last-child{
+						display: block;
+						width: 100%;
+						height: 5px;
+						background: $purple;
+						-webkit-border-radius: 10px;
+						border-radius: 10px;
+					}
+				}
+			}
+		}
+	}	
+}
+/* Carousel */
+.item{
+	min-height: 200px;
+	.carousel-caption{
+		text-shadow: none;
+		width: 100%;
+		left: 0;
+		top: 0;		
+		.a_wrap_block{
+			opacity: 1 !important;
+			text-align: left;
+			padding: 0;
+			width: 100%;
+			.awb{
+				margin: 0;
+				padding: 0 15px;
+				text-align: left !important;
+			}
+		}
+		h3{
+			float: left;
+			font-size: 24px;
+			letter-spacing: 0px;
+		}
+		p{
+			display: block;
+			width: 100%;
+			font-size: 18px !important;
+			line-height: 19px;
+		}
+	}
+}
+.carousel-indicators{
+	bottom: -10px;
+	li{
+		background: #c1c1c1;
+		border: none;
+		margin: 3px;
+	}
+	.active{
+		background: #5c3caf;
+		border: none;
+		width: 10px;
+		height: 10px;	
+		margin: 3px;	
+	}
+}

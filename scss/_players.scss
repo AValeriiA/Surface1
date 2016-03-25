@@ -1,0 +1,156 @@
+#players{
+	@media screen and (max-width: 1024px){
+		-ms-overflow-x: hidden;
+		overflow-x: hidden;
+	}	
+}
+#players, .f_top_wrap{
+	padding: 0px 0 0 0;
+	position: relative;
+	@media screen and (max-width: 767px){
+		min-height: 240px;
+	}
+	.a_wrap{
+		padding: 58px 0 69px;
+		@media screen and (max-width: 768px){
+			padding: 28px 0 38px;
+		}
+		&:first-child{
+			padding: 97px 0 8px 0;
+			@media screen and (max-width: 768px){
+				padding: 61px 0 8px 0;
+			}
+			@media screen and (max-width: 767px){
+				padding: 17px 0 41px;
+				margin-bottom: 60%;
+			}
+		}
+		.a_wrap_block{			
+			.awb{
+				@media screen and (max-width: 768px){
+					margin-left: 4%;
+				}
+			}
+			&:first-child{
+				.awb{
+					@media screen and (max-width: 767px){
+						margin-left: 0;	
+						text-align: center;				
+					}
+				}
+			}
+		}
+	}
+	.player_wrap{
+		width: 991px;
+		height: 815px;
+		position: absolute;
+		background: url(../images/basketballer.png) 0 0 no-repeat;
+		left: 797px;
+		top: -29px;
+		z-index: 2;
+		-webkit-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		@media screen and (max-width: 1610px){
+			left: 797px;
+		}	
+		@media screen and (max-width: 1400px){
+			left: 40%;
+		}	
+		@media screen and (max-width: 768px){
+			left: 331px;
+			top: 0px;
+			width: 675px;
+			height: 569px;
+		}	
+		@media screen and (max-width: 767px){
+			left: calc(50% - 294px/2);
+			top: 81px;
+			width: 294px;
+			height: 242px;
+		}
+		.plus1{
+			position: absolute;
+			top: 149px;
+			left: 318px;
+			@media screen and (max-width: 768px){
+				top: 97px;
+				left: 223px;
+			}	
+			@media screen and (max-width: 767px){				
+				left: 0%;
+				top: 16px;
+			}				
+			span{
+				display: block;
+				width: 16px;
+				height: 3px;
+				background: #cec6e7;
+				-webkit-border-radius: 40px;
+				border-radius: 40px;				
+				&:first-child{
+					position: absolute;
+					-webkit-transform: rotate(90deg);
+					-moz-transform: rotate(90deg);
+					-ms-transform: rotate(90deg);
+					-o-transform: rotate(90deg);
+					transform: rotate(90deg);
+				}
+			}
+		}
+		.plus2{
+			position: absolute;
+			top: 132px;
+			left: 296px;
+			@media screen and (max-width: 768px){
+				top: 78px;
+				left: 202px;
+			}	
+			@media screen and (max-width: 767px){
+				top: 25px;
+				left: 10%;
+			}	
+			span{
+				background: $purple;
+			}	
+		}
+		.plus3{
+			top: 396px;
+			left: 774px;
+			span{
+				background: $purple;
+			}
+		}
+	}
+	.line{
+		display: block;
+		position: absolute;
+		width: 6px;
+		height: 579px;
+		background: #9172e6;
+		-webkit-transform: rotate(41deg);
+		-moz-transform: rotate(41deg);
+		-ms-transform: rotate(41deg);
+		-o-transform: rotate(41deg);
+		transform: rotate(41deg);
+		top: 215px;
+		left: 1168px; 
+		z-index: 1; 
+		@media screen and (max-width: 768px){
+			top: -4px;
+			left: 678px;
+		}		
+		@media screen and (max-width: 767px){
+			width: 3px;
+			height: 300px;
+			left: 50%;
+			top: 65px;
+		}		
+	}	
+	.line2{
+		height: 413px;
+		top: -8px;
+		left: 1584px;
+	}
+}
